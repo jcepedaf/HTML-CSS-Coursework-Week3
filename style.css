@@ -1,1 +1,54 @@
-/*  Add your styling here */
+.container {
+
+/*    display: flex; */
+/*    margin-top: 0px; */
+/*    margin-bottom: 1px; */
+font-family: 'Kirang Haerang', cursive;
+    
+}
+
+header {
+
+    background-color: chartreuse;
+    /*padding-top: 50px;*/
+}
+
+main {
+    background-color: burlywood;
+}
+
+footer {
+
+    background-color: cyan;
+}
+
+@media (min-width: 540px) {
+
+    p {font-size: 20px;}
+
+}
+
+@media (min-width: 900px) {
+
+    p {font-size: 20px;}
+
+
+}
+
+/* 
+
+E63946
+F1FAEE
+A8DADC
+
+https://images.unsplash.com/photo-1599785209796-786432b228bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80
+https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80
+https://images.unsplash.com/photo-1590563139809-7f7ed0d27b5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80
+
+@media (max-width: 320px){
+  .jumbotron h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  */
