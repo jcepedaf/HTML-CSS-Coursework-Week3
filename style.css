@@ -22,6 +22,11 @@ header {
   position: relative;
 }
 
+/* esconder links del menu , solo aparece cuado das a home */
+.topnav #myLinks {
+  display: none;
+}
+
 /* estilos links del menu */
 .topnav a {
   color: rgb(63, 92, 71);
@@ -55,6 +60,9 @@ header {
 }
 
 /* fin menu    */
+
+
+
 
 main {
     background-color: burlywood;
@@ -91,12 +99,17 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgb(108, 170, 199);
   color: white;
   text-align: center;
 }
 
+@media (max-width: 540px) {
 
+
+  .topnav2 {display: none;}
+  .fila2 {display: none;}
+}
 
 @media (min-width: 540px) {
 
@@ -104,7 +117,46 @@ footer {
     .topnav {display: none;}
     main p { font-size: large;}
     main h1 {font-size: large;}
-        
+    .fila {display:none;}
+    .movil2 {display:none;}
+    
+    /* color a topnav2 */
+.topnav2 {
+  background-color: rgb(97, 90, 90);
+  overflow: hidden;
+}
+
+/* estilo de los links de nav */
+.topnav2 a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* cambio de color de los link con hover */
+.topnav2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* color active nav */
+.topnav2 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.fila2 {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.columna2 {
+  flex: 0%;
+  padding: 5px;
+}
 
 }
 
@@ -114,8 +166,44 @@ footer {
     .topnav {display: none;}
     main p { font-size: x-large;}
     main h1 { font-size:xx-large;}
-    
+    .fila {display: none;}
+        /* color a topnav2 */
+.topnav2 {
+  background-color: rgb(97, 90, 90);
+  overflow: hidden;
+}
 
+/* estilo de los links de nav */
+.topnav2 a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* cambio de color de los link con hover */
+.topnav2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* color active nav */
+.topnav2 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.fila2 {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.columna2 {
+  flex: 0%;
+  padding: 5px;
+}
   
 }
 
