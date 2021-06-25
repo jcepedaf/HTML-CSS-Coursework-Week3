@@ -10,10 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
@@ -21,38 +20,90 @@
 
 <body>
 
-    
+
 
     <header>
 
-            <p>cabecera</p>
+        
 
-            <!-- comienzo menu -->
+        <!-- comienzo menu -->
 
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            
+            <img src="./images/logo.png" alt="logo" height="60px">
+            <p>Las mejores tortas del mundo!</p>
+            
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+           
+        </div>
 
-            <!-- fin menu -->
+        <!-- fin menu -->
 
     </header>
 
     <main>
 
-        <p>cuerpo</p>
+        <h1>Bienvenidos</h1>
+        <p>
+            La repostería, confitería o pastelería es el arte de preparar o decorar pasteles u otros postres. El término repostería es el que se utiliza para denominar al tipo de gastronomía que se basa en la preparación, y decoración de platos dulces tales como tartas, pasteles, galletas, budines, etc.1​ Hay una extensa variedad de recetas. 
+        </p>
+
+        <div class="columna">
+            <img src="https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="torta" height="100%" width="100%">
+        </div>
+
+        
+
+        <div class="fila">
+
+            
+
+            <div class="columna"><img src="https://images.unsplash.com/photo-1590563139809-7f7ed0d27b5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="torta3" height="100%" width="100%"></div>
+            <div class="columna"><img src="./images/logo.png" alt="torta4" height="100%" width="100%"></div>
+
+
+        </div>
+        
+        <div class="fila">
+
+            <div class="columna"><img src="https://images.unsplash.com/photo-1590563139809-7f7ed0d27b5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="torta3" height="100%" width="100%"></div>
+            <div class="columna"><img src="./images/logo.png" alt="torta4" height="100%" width="100%"></div>
+
+
+        </div>
 
     </main>
 
     <footer>
 
-        <p>pie</p>
+        <div >
+            <p>Todos los derechos reservados @ 2021</p>
+          </div>
 
     </footer>
 
     <!-- Add your markup here -->
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 
 </html>
